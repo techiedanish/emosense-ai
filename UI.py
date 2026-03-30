@@ -37,7 +37,7 @@ def draw_chart(data_dict, title, color):
     ).configure_axisY(
         titleColor=color, titleFontWeight='bold'
     )
-    return st.altair_chart(chart, use_container_width=True)
+    return st.altair_chart(chart, width = 'stretch')
 
 st.title("EmoSense AI")
 model_a, le_a, scaler_a = load_trained_assets()
