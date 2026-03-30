@@ -2,3 +2,5 @@
 __pycache__/
 tempfile_*
 .DS_Store
+*.pyc
+temp.wav

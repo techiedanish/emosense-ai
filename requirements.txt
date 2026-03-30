@@ -3,3 +3,5 @@ opencv-contrib-python-headless
 deepface
 tf-keras
 numpy
+librosa
+scikit-learn
