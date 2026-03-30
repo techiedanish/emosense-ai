@@ -1,7 +1,9 @@
 streamlit
-opencv-contrib-python-headless
+opencv-python-headless
 deepface
 tf-keras
-numpy
-scikit-learn
 librosa
+numpy
+pandas
+altair
+scikit-learn
