@@ -7,9 +7,10 @@ from collections import deque
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 
 # Initialize Face Detection
-face_cascade = cv2.CascadeClassifier(
-    cv2.data.haarcascades + "haarcascade_frontalface_default.xml"
-)
+face_cascade = cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
+
+if face_cascade.empty():
+    print("ERROR: Could not load haarcascade_frontalface_default.xml. Check file path!")
 
 # FIXED EMOTION ORDER FOR UNIFIED UI
 EMOTION_ORDER = ['angry', 'disgust', 'fear', 'happy', 'neutral', 'sad', 'surprise']
